@@ -1,0 +1,30 @@
+﻿@using KaldAndCocaine.Models.Drivers
+@model DriverViewModel
+
+<h1>Driver Details</h1>
+<div class="row">
+    <div class="col-md-2">
+        Id
+    </div>
+    <div class="col-md-4">
+        @Model.Id
+    </div>
+</div>
+
+<div class="row mt-2">
+    <div class="col-md-2">
+        Name
+    </div>
+    <div class="col-md-4">
+        @Model.FirstName @Model.LastName
+    </div>
+</div>
+
+<div class="row mt-2">
+    <div class="col-md-2">
+        Date of Birth
+    </div>
+    <div class="col-md-4">
+        @Model.DateOfBirth
+    </div>
+</div>

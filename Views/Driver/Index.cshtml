@@ -1,0 +1,37 @@
+﻿@using KaldAndCocaine.Models.Drivers
+@model List<DriverViewModel>
+
+<h1>Drivers List</h1>
+
+@foreach (DriverViewModel driver in Model)
+{    
+    <div class="row">
+        <div class="col-md-2">
+            Id
+        </div>
+        <div class="col-md-4">
+            @driver.Id
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-md-2">
+            Name
+        </div>
+        <div class="col-md-4">
+            @driver.FirstName @driver.LastName
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-md-2">
+            Date of Birth
+        </div>
+        <div class="col-md-4">
+            @driver.DateOfBirth
+        </div>
+    </div>
+    
+    <hr />
+}
+
